@@ -1,1 +1,18 @@
 services:
+  db:
+    image: mysql:8.1.0
+    container_name: db
+    command: --innodb-use-native-aio=0
+    restart: always
+    tty: true
+    volumes:
+      - ./data:/Users/ederrodrigues/Documents/projects/controledealugueis/data
+    environment:
+      - MYSQL_DATABASE=controleAlugueis
+      - MYSQL_ROOT_PASSWORD=root
+    networks:
+      - localNetwork
+
+  networks:
+    localNetwork:
+      driver: bridge
