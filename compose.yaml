@@ -11,8 +11,8 @@ services:
       - MYSQL_DATABASE=controleAlugueis
       - MYSQL_ROOT_PASSWORD=root
     networks:
-      - NetworkLocal
+      - ControleAlugueis
 
-  networks:
-    NetworkLocal:
-      driver: bridge
+networks:
+  ControleAlugueis:
+    driver: bridge
