@@ -5,6 +5,8 @@ services:
     command: --innodb-use-native-aio=0
     restart: always
     tty: true
+    ports:
+      - 3306:3306
     volumes:
       - ./data:/Users/ederrodrigues/Documents/projects/controledealugueis/data
     environment:
