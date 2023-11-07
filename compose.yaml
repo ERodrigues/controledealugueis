@@ -10,7 +10,7 @@ services:
     volumes:
       - ./data:/Users/ederrodrigues/Documents/projects/controledealugueis/data
     environment:
-      - MYSQL_DATABASE=controleAlugueis
+      - MYSQL_DATABASE=controleDeAlugueis
       - MYSQL_ROOT_PASSWORD=root
     networks:
       - ControleAlugueis
